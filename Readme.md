@@ -14,6 +14,10 @@ Connect logger to context:
 
 	lgCtx := lg.WithContext(ctx)
 
+Call function with context as argument: 
+
+    logFn(lgCtx)
+
 Retrieve logger from context:
 
 	lgFn := log.Ctx(ctx).With().Str("site", "function").Logger()
